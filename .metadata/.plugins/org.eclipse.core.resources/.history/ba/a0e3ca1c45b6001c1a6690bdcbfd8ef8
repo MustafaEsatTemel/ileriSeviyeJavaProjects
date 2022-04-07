@@ -1,0 +1,12 @@
+package me.mustafaesattemel.project.hibernateAndJpa.Entities;
+
+public class City {
+
+	private int id;
+	private String name;
+	private String countryCode;
+	private String district;
+	private String population;
+	
+	
+}

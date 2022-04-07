@@ -1,0 +1,10 @@
+package me.mustafaesattemel.project.hibernateAndJpa.RestApi;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController//Bunun bir rest controller olabilmesi için bu anatasyonla süslememiz gerekir.
+@RequestMapping("/api") //localhost:8080/api gibi düşünebilirsin.
+public class CityController {
+
+}

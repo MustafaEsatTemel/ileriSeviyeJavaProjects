@@ -1,0 +1,8 @@
+package me.mustafaesattemel.project.hibernateAndJpa.RestApi;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController//Bunun bir rest controller olabilmesi için bu anatasyonla süslememiz gerekir.
+public class CityController {
+
+}

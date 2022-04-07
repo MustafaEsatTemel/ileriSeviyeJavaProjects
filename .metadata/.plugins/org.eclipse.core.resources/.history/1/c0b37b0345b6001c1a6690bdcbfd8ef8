@@ -1,0 +1,5 @@
+package me.mustafaesattemel.project.hibernateAndJpa.Entities;
+
+public class City {
+
+}

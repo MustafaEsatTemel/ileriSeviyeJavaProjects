@@ -1,0 +1,53 @@
+package me.mustafaesattemel.project.hibernateAndJpa.DataAccess;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import me.mustafaesattemel.project.hibernateAndJpa.Entities.City;
+
+//JPA ilk başta ORM gibi ortaya çıkmışken daha sonra javada standart haline geliyor.
+//Yani hibernate'de Spring'de bu JPA'yı implemente ediyor. Hani biz eski projelerimizde SessionFactory felan oluşturmuştuk
+//ya, onlar burada jpa aracılığı ile otomatik oluşacak yani.
+
+public class HibernateCityDal implements ICityDal{
+	
+	//SessionFactory'i buradan yöneteceğiz gibi düşünebilirsin.
+	private EntityManager entityManager;	
+	
+	
+	//Bizim için otomatik hibernate enjeksiyonu yapacak. Paketlere bakacak mesela bu çocuk hangi yazılımı kullanmış diye
+	//hibernateyi görünce tamamdır ben hibernate enjeksiyonu yapayım diyecek.
+	@Autowired
+	public HibernateCityDal(EntityManager entityManager) {
+		this.entityManager = entityManager;
+	}
+
+	@Override
+	public List<City> getAll() {
+		entityManager.unwrap(Session.class);
+		return null;
+	}
+
+	@Override
+	public void add(City city) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(City city) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(City city) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package me.mustafaesattemel.project.hibernateAndJpa.DataAccess;
+
+import java.util.List;
+
+import me.mustafaesattemel.project.hibernateAndJpa.Entities.City;
+
+//JPA ilk başta ORM gibi ortaya çıkmışken daha sonra javada standart haline geliyor
+
+public class HibernateCityDal implements ICityDal{
+
+	@Override
+	public List<City> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void add(City city) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(City city) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(City city) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
